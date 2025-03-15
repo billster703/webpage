@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Lumina Nebula Express</title>
+        <script src="animation.js">
+        </script>
+        <link rel="stylesheet" href="STYLE.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+    </head>
+    <body onload="checkCookies()">
+      <header>
+        <h1>Lumina Nebula Express</h1>
+        <nav>
+          <a href="#dark">Dark Cacao</a>
+          <a href="#vanilla">Pure Vanilla</a>
+          <a href="#holly">Hollyberry</a>
+        </nav>
+      </header> 
+      <section id="dark">
+        <h2>Dark Cacao Guilds</h2>
+        <div class="guild-card">
+            <img src="sonderbanner.jpg" alt="Sonder Guild">
+            <button onclick="showInfo('sonder')">View Info</button>
+        </div>
+    </section>
+    <section id="vanilla">
+      <h2>Pure Vanilla Guilds</h2>
+      <div class="guild-card">
+          <img src="dawnofjustice.jpg" alt="Dawn Of Justice">
+          <button onclick="showInfo('justice')">View Info</button>
+      </div>
+  </section>
+  <section id="holly">
+      <h2>Hollyberry Guilds</h2>
+  <div class="guild-card">
+      <img src="luminastarad_1.gif" alt="Luministar">
+      <button onclick="showInfo('luministar')">View Info</button>
+  </div>
+  </section>
+  <div id="info-modal">
+      <h3>Guild Info</h3>
+      <p id="guild-info"></p>
+      <button onclick="closeModal()">Close</button>
+  </div>
+    </body>
+</html>

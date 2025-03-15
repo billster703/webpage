@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0f1624, #1a2b4b);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+  background: #ff7f50;
+  transform: scale(1.1);
+  border-radius: 20px;
+}
+
+section {
+  padding: 120px 20px 60px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.guild-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.guild-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.guild-card button {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.guild-card button:hover {
+  transform: scale(1.1);
+}
+
+#info-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10000;
+}
+
+#info-modal button {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+img { 
+  display: block;
+  margin-left: auto;
+margin-right: auto; 
+width: 250px;
+height: 500px;
+}
